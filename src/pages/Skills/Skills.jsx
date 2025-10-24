@@ -31,6 +31,10 @@ import {
   SiMysql,
   SiAdobephotoshop,
   SiJavascript,
+  SiRaspberrypi,
+  SiOllama,
+  SiGodotengine,
+  SiUnity,
 } from "react-icons/si";
 import { TbBrandVscode } from "react-icons/tb";
 import { BsFileEarmarkCode, BsGrid1X2 } from "react-icons/bs";
@@ -39,8 +43,8 @@ import { FcWorkflow } from "react-icons/fc";
 import { useTranslation } from "react-i18next";
 
 const SkillCard = ({ icon: Icon, title, skills, color }) => (
-  <Card id="skills" className="group relative overflow-hidden bg-gray-900/80 border-gray-700 hover:scale-[1.02] transition-all duration-300 hover:shadow-xl hover:shadow-blue-500/20">
-    <div className="absolute inset-0 bg-gradient-to-r from-transparent via-[rgba(100,100,255,0.1)] to-transparent group-hover:via-[rgba(100,100,255,0.2)] animate-shimmer"></div>
+  <Card id="skills" className="group relative overflow-hidden bg-blue-950/70 dark:bg-blue-950/20 border-gray-700 hover:scale-[1.02] transition-all duration-300 hover:shadow-xl hover:shadow-purple-400/20">
+    <div className="absolute inset-0 bg-gradient-to-r from-transparent via-[rgba(144, 144, 252, 0.1)] to-transparent group-hover:via-[rgba(100,100,255,0.2)] animate-shimmer"></div>
     <CardContent className="p-6 relative z-10">
       <div className="flex items-center gap-4 mb-6">
         <div
@@ -138,12 +142,16 @@ const SkillsSection = () => {
       color: "text-purple-400",
       skills: [
         {
-          name: "UI Animation",
-          icon: <MdAnimation className="w-4 h-4 text-[#00C853]" />,
+          name: "Graphic Design",
+          icon: <SiAdobephotoshop className="w-4 h-4 text-[#FF4081]" />,
         },
         {
           name: "Responsive Design",
           icon: <Layout className="w-4 h-4 text-[#38B2AC]" />,
+        },
+        {
+          name: "UI Animation",
+          icon: <MdAnimation className="w-4 h-4 text-[#00C853]" />,
         },
         {
           name: "Prototyping",
@@ -158,13 +166,8 @@ const SkillsSection = () => {
       skills: [
         {
           name: "Docker",
-          icon: <FaDocker className="w-4 h-4 text-[#2496ED]" />,
-        },
+          icon: <FaDocker className="w-4 h-4 text-[#2496ED]" />},
         { name: "CI/CD", icon: <FcWorkflow className="w-4 h-4" /> },
-        {
-          name: "Kubernetes",
-          icon: <BsGrid1X2 className="w-4 h-4 text-[#326CE5]" />,
-        },
         { name: "Git", icon: <FaGitAlt className="w-4 h-4 text-[#F05032]" /> },
         { name: "Linux", icon: <FaLinux className="w-4 h-4 text-[#FCC624]" /> },
       ],
@@ -176,17 +179,15 @@ const SkillsSection = () => {
       skills: [
         {
           name: "VS Code",
-          icon: <TbBrandVscode className="w-4 h-4 text-[#007ACC]" />,
+          icon: <TbBrandVscode className="w-4 h-4 text-[#007ACC]" />
         },
-        { name: "Jest", icon: <SiJest className="w-4 h-4 text-[#C21325]" /> },
         {
-          name: "Webpack",
-          icon: <SiWebpack className="w-4 h-4 text-[#8DD6F9]" />,
+          name: "Ollama",
+          icon: <SiOllama className="w-4 h-4 text-[#646CFF]" />,
         },
-        { name: "Redux", icon: <SiRedux className="w-4 h-4 text-[#764ABC]" /> },
         {
-          name: "Firebase",
-          icon: <SiFirebase className="w-4 h-4 text-[#FFCA28]" />,
+          name: "Raspberry Pi",
+          icon: <SiRaspberrypi className="w-4 h-4 text-[#FFCA28]" />,
         },
       ],
     },
@@ -195,10 +196,7 @@ const SkillsSection = () => {
       title: t("skills.subtitle5"),
       color: "text-yellow-400",
       skills: [
-        {
-          name: "Graphic Design",
-          icon: <SiAdobephotoshop className="w-4 h-4 text-[#FF4081]" />,
-        },
+        { name: "Game Development", icon: <SiUnity className="w-4 h-4 text-[#478CBF]" /> },
         {
           name: "3D Modeling",
           icon: <Cpu className="w-4 h-4 text-[#7C4DFF]" />,

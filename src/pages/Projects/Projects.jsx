@@ -194,7 +194,7 @@ function Card({
           </div>
 
           {/* Content section - full width on mobile, 45% on desktop */}
-          <div className="w-full md:w-[45%] p-6 md:p-8 lg:p-10 flex flex-col justify-between">
+          <div className="w-full md:w-[45%] p-6 bg-blue-950/70 dark:bg-blue-950/30 md:p-8 lg:p-10 flex flex-col justify-between">
             <div>
               <div className="flex items-center gap-3 mb-4 md:mb-6">
                 <div

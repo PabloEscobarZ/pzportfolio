@@ -55,7 +55,7 @@ export default function Contact() {
 
     // Create a new FormData object to send to Web3Forms API
     const form = new FormData();
-    form.append("access_key", "90f4b8af-e590-42b0-beaf-10b18f66a703"); // Replace with your Web3Forms access key
+    form.append("access_key", "f7768a40-22b0-428c-9afb-7586bff4e36e"); // Replace with your Web3Forms access key
     form.append("name", formData.name);
     form.append("email", formData.email);
     form.append("subject", formData.subject || "New Contact Form Submission");
@@ -93,7 +93,7 @@ export default function Contact() {
       className="pt-20 lg:pt-[0rem]" //bg-[#04081A] text-white
     >
       <section id="contact" className="hero flex items-center relative px-4 sm:px-6 lg:px-8"
-        style={{ paddingTop: "10px", paddingBottom: "100px" }}>
+        style={{ paddingTop: "10px", paddingBottom: "400px" }}>
         <div className="container mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Contact Info */}
@@ -131,7 +131,7 @@ export default function Contact() {
             </div>
 
             {/* Contact Form */}
-            <div className="backdrop-blur-lg bg-white/6 p-8 rounded-2xl shadow-xl">
+            <div className="backdrop-blur-lg border-2 border-blue-800 dark:border-blue-700 animate-gradient-x bg-white/6 p-8 rounded-2xl shadow-xl">
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid grid-cols-1 gap-6">
                   <div>

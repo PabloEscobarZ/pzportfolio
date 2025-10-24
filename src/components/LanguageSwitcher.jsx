@@ -36,7 +36,7 @@ const currentLangDisplay = languageDisplayMap[i18n.language] || i18n.language.to
       onClick={toggleLanguage}
       className={`px-3 py-2 md:py-1.5 rounded-lg md:rounded-full text-sm font-medium
         transition-all duration-300 flex items-center gap-2
-        hover:bg-white/10 text-gray-300 hover:text-white
+        hover:bg-white/10 text-gray-700 dark:text-gray-300 hover:text-white
       `}
       aria-label={`Switch language to ${nextLangDisplay === 'en' ? 'it' : 'en'}`}
     >

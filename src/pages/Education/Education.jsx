@@ -82,7 +82,7 @@ const EducationSection = () => {
   const educationOffset = educationData.length;
 
   return (
-    <section id="education" className="relative overflow-hidden py-40" style={{ paddingTop: "50px", paddingBottom: "80px" }}>
+    <section id="education" className="container mx-auto px-4 py-11 relative" style={{ paddingTop: "50px", paddingBottom: "80px" }}>
       {/* Grid Background */}
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-grid-white/[0.05] bg-[length:50px_50px]" />
@@ -97,7 +97,7 @@ const EducationSection = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-blue-700 to-purple-700 bg-clip-text text-transparent mb-6">
             {t("education.title")}
           </h2>
           <p className="max-w-2xl mx-auto text-lg">
@@ -115,7 +115,7 @@ const EducationSection = () => {
             <motion.div
               key={index}
               variants={cardVariants}
-              className={`relative border rounded-xl p-8 transition-all duration-300 bg-gray-900/80 backdrop-blur-sm ${
+              className={`relative border rounded-xl p-8 transition-all duration-300 bg-blue-950/70 dark:bg-blue-950/20 backdrop-blur-sm ${
                 hoveredIndex === index
                   ? "border-purple-500 scale-[1.02]"
                   : "border-blue-400/20"
@@ -185,7 +185,7 @@ const EducationSection = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-purple-400 to-blue-500 bg-clip-text text-transparent mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-purple-700 to-blue-700 bg-clip-text text-transparent mb-6">
             {t("education.worktitle")}
           </h2>
           <p className="max-w-2xl mx-auto text-lg">
@@ -205,7 +205,7 @@ const EducationSection = () => {
             <motion.div
               key={index}
               variants={cardVariants}
-              className={`relative border rounded-xl p-8 transition-all duration-300 bg-gray-900/80 backdrop-blur-sm ${
+              className={`relative border rounded-xl p-8 transition-all duration-300 bg-blue-950/70 dark:bg-blue-950/20 backdrop-blur-sm ${
                 hoveredIndex === uniqueIndex
                   ? "border-purple-500 scale-[1.02]"
                   : "border-blue-400/20"

@@ -47,7 +47,6 @@ export default function Hero() {
 
   const words = [
     "Full-Stack Developer & UI Designer",
-    "Ai integration",
     "Web Pages & Hybrid App Dev",
     "Linux DevOps",
   ];
@@ -58,8 +57,8 @@ export default function Hero() {
       <main className="bg-background text-foreground">
         {/* rimosso bg-[#020617] e text-white per favorire tema scuro / chiaro */}
         <section id="home" 
-          className="hero flex items-center justify-center relative px-4 sm:px-6 lg:px-8 py-10 md:py-16 lg:py-0 hero-section-padding"
-          style={{ paddingTop: "80px" }}
+          className="hero container mx-auto  flex items-center justify-center relative px-4 sm:px-6 lg:px-8 py-12 md:py-16 lg:py-0 lg:mt-20 hero-section-padding"
+          style={{ paddingTop: "50px" }}
         >
           <div className="absolute inset-0"></div>
 
@@ -137,14 +136,14 @@ export default function Hero() {
               </div>
 
               {/* CTA Buttons */}
-              <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 animate__animated animate__fadeInUp animate__delay-2s">
+              <div className="flex sm:justify-center sm:flex-row gap-4 sm:gap-6 animate__animated animate__fadeInUp animate__delay-2s">
                 {/* View Projects Button */}
                 <a
                   href="https://github.com/PabloEscobarZ"
                   className="group relative inline-flex items-center justify-center gap-3 bg-gradient-to-r from-blue-500 to-purple-400 p-0.5 rounded-xl transition-all duration-300 hover:scale-105 hover:shadow-[0_0_2rem_-0.5rem_#60A5FA]"
                 >
                   <span className="block w-full px-6 sm:px-8 py-3 sm:py-4 rounded-[11px] bg-blue-400 dark:bg-gray-900 transition-all duration-300 group-hover:bg-gradient-to-r group-hover:from-blue-500 group-hover:to-purple-400">
-                    <span className="relative text-white flex items-center justify-center gap-2 font-medium">
+                    <span className="relative text-gray-700 dark:text-gray-300 flex items-center justify-center gap-2 font-medium">
                       <span class="[&>svg]:h-5 [&>svg]:w-5">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -160,13 +159,16 @@ export default function Hero() {
 
                 {/* Contact Button */}
                 <a
-                  href="#"
+                  href="#contact"
                   className="group relative inline-flex items-center justify-center gap-3 bg-gradient-to-r from-blue-500 to-purple-400 p-0.5 rounded-xl transition-all duration-300 hover:scale-105 hover:shadow-[0_0_2rem_-0.5rem_#60A5FA]"
                 >
                   <span className="block w-full px-6 sm:px-8 py-3 sm:py-4 rounded-[11px] bg-blue-400 dark:bg-gray-900 dark:bg-gray-900 transition-all duration-300 group-hover:bg-gradient-to-r group-hover:from-blue-500 group-hover:to-purple-700">
-                    <span className="relative text-white flex items-center justify-center gap-2 font-medium">
-                      <span>
-                        {t('hero.contactme')}
+                    <span className="relative text-gray-700 dark:text-gray-300 flex items-center justify-center gap-2 font-medium">
+                      <span class="[&>svg]:h-5 [&>svg]:w-5">
+                        {/* {t('hero.contactme')} */}
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-send-fill" viewBox="0 0 16 16">
+                          <path d="M15.964.686a.5.5 0 0 0-.65-.65L.767 5.855H.766l-.452.18a.5.5 0 0 0-.082.887l.41.26.001.002 4.995 3.178 3.178 4.995.002.002.26.41a.5.5 0 0 0 .886-.083zm-1.833 1.89L6.637 10.07l-.215-.338a.5.5 0 0 0-.154-.154l-.338-.215 7.494-7.494 1.178-.471z"/>
+                        </svg>
                       </span>
                       <i className="fas fa-envelope transform transition-all duration-300 group-hover:rotate-12"></i>
                     </span>

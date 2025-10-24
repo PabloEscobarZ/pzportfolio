@@ -55,10 +55,10 @@ export default function Header({ isOnePage }) {
   ];
 
   return (
-    <header className="fixed top-0 left-0 w-full z-40 bg-gray-900/95 backdrop-blur-md md:bg-transparent md:backdrop-blur-none">
+    <header className="fixed top-0 left-0 w-full z-40 bg-white-900/5 dark:bg-gray-900/95 backdrop-blur-md md:bg-transparent md:backdrop-blur-none">
       <div className="md:fixed md:top-4 md:left-1/2 md:transform md:-translate-x-1/2 w-full md:w-auto">
-        <div className="p-[2px] md:rounded-full bg-gradient-to-r from-emerald-400 via-cyan-500 to-indigo-500 animate-gradient-x">
-          <nav className="bg-gray-900/90 backdrop-blur-md md:rounded-full px-4 md:px-6 py-2.5">
+        <div className="p-[2px] md:rounded-full bg-gradient-to-r from-blue-900 via-purple-700 to-purple-900 dark:from-blue-400 dark:via-cyan-500 dark:to-purple-600 animate-gradient-x">
+          <nav className="bg-blue-400/95 dark:bg-gray-900 backdrop-blur-md md:rounded-full px-4 md:px-6 py-2.5">
             {/* Mobile Menu Button */}
 
                   {/* ... (i tuoi link navLinks.map) ... */}
@@ -74,10 +74,10 @@ export default function Header({ isOnePage }) {
                     {theme === 'light' ? <FaSun className="text-base" /> : <FaMoon className="text-base text-yellow-400" />}
                     <span className="inline capitalize">{theme === 'light' ? '' : ''}</span>
                   </button>
-              <Link to="/" className="text-white font-bold"></Link>
+              <Link to="/" className=" font-bold"></Link>
               <button 
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
-                className="text-white p-2"
+                className="p-2"
               >
                 <FaBars />
               </button>
@@ -92,7 +92,7 @@ export default function Header({ isOnePage }) {
                     className="px-3 py-2 md:py-1.5 rounded-lg md:rounded-full text-sm font-medium transition-all duration-300 flex items-center gap-2 hover:bg-white/10 text-gray-300 hover:text-white"
                     aria-label={`Switch to ${theme === 'light' ? 'dark' : 'light'} theme`}
                   >
-                    {theme === 'light' ? <FaSun className="text-base" /> : <FaMoon className="text-base text-yellow-400" />}
+                    {theme === 'light' ? <FaSun className="text-base text-yellow-400" /> : <FaMoon className="text-base text-gray-600" />}
                     <span className="inline capitalize">{theme === 'light' ? '' : ''}</span>
                   </button>
                 {navLinks.map(({ id, icon: Icon, text, path, anchor }) => (
@@ -113,8 +113,8 @@ export default function Header({ isOnePage }) {
                       hover:bg-white/10 
                       ${
                         activeLink === id
-                          ? "bg-white/15 text-white"
-                          : "text-gray-300 hover:text-white"
+                          ? "bg-white/15 text-purple-700 dark:text-purple-300 hover:text-white"
+                          : "text-gray-700 dark:text-gray-300 hover:text-blue-100"
                       }
                     `}
                   >
