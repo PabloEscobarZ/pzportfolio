@@ -2,7 +2,7 @@
   "name": "pzportfolio",
   "private": true,
   "version": "1.0.0",
-  "homepage": "https://pabloescobarz.github.io/pzportfolio/",
+  "homepage": "https://pabloescobarz.github.io/pzportfolio",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
