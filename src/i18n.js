@@ -26,7 +26,7 @@ i18n
     // Configurazione del backend per il caricamento
     backend: {
       // Dove trovare i file di traduzione (ad es. /public/locales/en/translation.json)
-      loadPath: '/pzportfolio/locales/{{lng}}/{{ns}}.json',
+      loadPath: process.env.PUBLIC_URL + '/locales/{{lng}}/{{ns}}.json',
     },
     
     // Impostazioni per il rilevamento della lingua
