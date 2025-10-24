@@ -1,0 +1,104 @@
+{"nav": {
+    "home": "Home",
+    "skills": "Skills",
+    "experience": "Esperienza",
+    "education": "Istruzione",
+    "projects": "Progetti",
+    "contact": "Contatti"
+    },
+"hero": {
+    "welcome": "Benvenuto nel mio portfolio",
+    "contactme": "Contattami",
+    "greeting": "Ciao, sono",
+    "name": "Paolo Zagarella",
+    "role": "uno Sviluppatore Full-Stack",
+    "description": "Specializzato nella creazione di siti web / applicazioni web dinamiche e reattive. Esplora il mio portfolio per conoscere le mie competenze, i miei lavori e collaborazioni.",
+    "desc":"Soluzioni Web / App personalizzate 🌐 | Creatore di FitInApp ​🏃🏼‍♂️‍➡️​ | Programmando il futuro 💻✨"
+    },
+"skills": {
+        "title": "Competenze",
+        "description": "Ecco alcune delle mie competenze tecniche:",
+        "subtitle0":"Sviluppo Frontend",
+        "subtitle1":"Sviluppo Backend",
+        "subtitle2":"Cloud & DevOps",
+        "subtitle3":"Strumenti e Piattaforme",
+        "subtitle4":"UI Design personalizzato",
+        "subtitle5":"Competenze aggiuntive"
+    },
+"education": {
+        "title": "Istruzione e Formazione",
+        "description": "Il mio percorso educativo per la crescita professionale.",
+        "keys": "Argomenti chiave",
+
+        "degree0": "Diploma di Ragioneria",
+        "school0": "Istituto Tecnico Commerciale e Geometra di Furci Siculo (ME)",
+        "year0": "2008 - 2013",
+        "tesi0": "La globalizzazione e i mass media",
+        "skills0":"Economia Aziendale, Diritto, Economia Politica, Storia.",
+        "desc0":"Analisi dell'impatto della globalizzazione sui mass media e sulla società, dalla seconda metà del XX secolo ai giorni nostri.",
+        
+        "degree1": "Laurea in Ingegneria Informatica",
+        "school1": "Università degli Studi di Catania",
+        "year1": "2013 - 2019",
+        "tesi1":"Sviluppo di un nodo bitcoin su lightning network, simulazione di invio e ricezione di micropagamenti in testnet.",
+        "skills1":"Blockchain, Reti di Calcolatori, Sicurezza Informatica, Programmazione Avanzata.",
+        "desc1":"Progettazione e implementazione di un nodo Bitcoin compatibile con il Lightning Network, inclusa la simulazione di transazioni di micropagamenti in ambiente testnet.",
+
+        "worktitle": "Esperienza Lavorativa",
+        "workdesc": "Le mie esperienze lavorative più significative:",
+
+        "degree2": "Sviluppo Web Full-Stack",
+        "school2": "0101Software",
+        "year2": "2018 - 2020",
+        "skills2":"PHP, HTML, CSS, JavaScript, MySQL, Node.js, Express",
+        "desc2":"Sviluppo web full-stack per pagine web statiche o dinamiche e gestione di database su server Ubuntu per piccole e medie imprese.",
+    
+        "degree3": "Sviluppatore Web Full-Stack",
+        "school3": "Logisco S.r.l.",
+        "year3": "2021 - 2025",
+        "skills3":"PHP, HTML, CSS, JavaScript, Aruba Cloud, Python, MySQL, REST API",
+        "desc3":"Sviluppo e manutenzione di un gestionale su Aruba Cloud e implementazione di soluzioni personalizzate per clienti aziendali nel campo della logistica."
+
+    },
+    "projects": {
+        "prjtitle": "Alcuni lavori a cui ho partecipato",
+
+        "title0": "Aliberti Salotti",
+        "desc0": "Sito web per vendita e presentazione di mobili e complementi d'arredo di alta qualità.",
+        "scr0": "Visita il Sito",
+        "color0": "bg-blue-600 hover:bg-blue-700",
+        "imglink0":"/src/assets/images/prj0.jpg",
+        "prjlink0":"https://www.alibertisalotti.it/",
+
+        "title1": "DUCI",
+        "desc1": "Sito web vetrina per DUCI specializzata in produzione e vendita di prodotti dolciari.",
+        "scr1": "Vedi Sito",
+        "color1": "bg-blue-600 hover:bg-blue-700",
+        "imglink1":"/src/assets/images/prj1.jpg",
+        "prjlink1":"https://www.duci.biz/",
+
+        "title2": "Cluxter",
+        "desc2": "Servizi di consulenza per calzatura, pelletteria e bijoux per aziende e privati",
+        "scr2": "Visita il Sito",
+        "color2": "bg-green-600 hover:bg-green-700",
+        "imglink2":"/src/assets/images/prj3.jpg",
+        "prjlink2":"https://www.cluxter.it",
+
+        "title3": "FitInApp",
+        "desc3": "App mobile ibrida progettata per prenotare la lezione con il PT di FitIn. App in fase di sviluppo.",
+        "scr3": "Progetto in fase di sviluppo",
+        "color3": "bg-red-600 hover:bg-red-700",
+        "imglink3":"/src/assets/images/prj4.jpg",
+        "prjlink3":"#"
+    },
+    "contact": {
+        "title": "Contattami",
+        "description": "Hai un progetto in mente o vuoi semplicemente avere un contatto con me? Sentiti libero di contattarmi!",
+        "name": "Nome",
+        "email": "La tua email",
+        "subject": "Oggetto",
+        "message": "Il tuo messaggio",
+        "send": "Invia Messaggio",
+        "add0": "Sede"
+    }
+}
