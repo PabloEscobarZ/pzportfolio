@@ -3,6 +3,12 @@ name: Deploy Vite React app to GitHub Pages
 on:
   push:
     branches: [ main ]  # o 'master' se il tuo branch principale si chiama così
+    
+# garantisce al workflow i permessi di scrittura necessari per push e Pages
+permissions:
+  contents: write
+  pages: write
+  id-token: write
 
 jobs:
   build:
@@ -31,4 +37,5 @@ jobs:
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages
           publish_dir: ./dist
